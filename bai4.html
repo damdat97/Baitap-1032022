@@ -105,7 +105,7 @@ Nhập b: <input type="text" id="sob">
     <title>Document</title>
 </head>
 <body>
-<h2>d.</h2>
+<h2>e.</h2>
 Nhập a: <input type="text" id="canh1">
 <br>
 <br>
@@ -139,6 +139,35 @@ Nhập c: <input type="text" id="canh3">
             }
         } else {
             alert('!!!')
+        }
+    }
+</script>
+</body>
+</html>
+
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+<h2>d.</h2>
+Nhập a: <input type="text" id="nam">
+<br><br>
+<button onclick="theky()">Kết quả</button>
+<p id="theky"></p>
+<script>
+    function theky() {
+        let sonam=document.getElementById('nam').value;
+        nam=parseInt(sonam);
+        let theky=nam/100;
+        if (theky%nam == 0) {
+            document.getElementById('theky').innerHTML="Thế kỷ " +theky;
+        } else if (theky !=0 ) {
+            document.getElementById('theky').innerHTML='Thế kỷ ' +(theky+1);
         }
     }
 </script>
