@@ -134,7 +134,7 @@ Nhập c: <input type="text" id="canh3">
                 document.getElementById('dieukien').innerHTML='Đây là tam giác đều';
             } else if ((canha==canhb)&&(canha!=canhc)) {
                 document.getElementById('dieukien').innerHTML='Đây là tam giác cân';
-            } else if ((canha2==(canhb2+canhc2))||(canhb2==(canha2+canhc2))||(canhc2==(canha2+canhb2))) {
+            } if ((canha2==(canhb2+canhc2))||(canhb2==(canha2+canhc2))||(canhc2==(canha2+canhb2))) {
                 document.getElementById('dieukien').innerHTML='Đây là tam giác vuông';
             }
         } else {
