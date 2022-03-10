@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="text" id="so1">
+<input type="text" id="so2">
+<button onclick="ketqua()" >Kết quả</button>
+<h1 id="ketqua"></h1>
+<script>
+    function ketqua() {
+      let so1 =document.getElementById('so1').value;
+      let so2 =document.getElementById('so2').value;
+      a=parseInt(so1);
+      b=parseInt(so2);
+      c = a*b;
+      document.getElementById('ketqua').innerHTML='S = ' +c;
+  }
+</script>
+</body>
+</html>
