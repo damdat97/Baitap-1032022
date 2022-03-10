@@ -125,9 +125,9 @@
         canha=parseInt(canh1);
         canhb=parseInt(canh2);
         canhc=parseInt(canh3);
-        let canha2=canha*canha;
-        let canhb2=canhb*canhb;
-        let canhc2=canhc*canhc;
+        canha2=canha*canha;
+        canhb2=canhb*canhb;
+        canhc2=canhc*canhc;
         if ((canha+canhb>canhc)||(canha+canhb>canhc)||(canh2+canh3>canh1)) {
             document.getElementById('dieukien').innerHTML='Đây là tam giác';
             if ((canha==canhb)&&(canha==canhc)){
@@ -135,10 +135,10 @@
             } else if ((canha==canhb)&&(canha!=canhc)) {
                 document.getElementById('dieukien').innerHTML='Đây là tam giác cân';
             } else if ((canha2==(canhb2+canhc2))||(canhb2==(canha2+canhc2))||(canhc2==(canha2+canhb2))) {
-                document.getElementById('dieukien').innerHTML='Đây là hình vuông';
+                document.getElementById('dieukien').innerHTML='Đây là tam giác vuông';
             }
         } else {
-            document.getElementById('dieukien').innerHTML='Đây không phải tam giác';
+            alert('!!!')
         }
     }
 </script>
